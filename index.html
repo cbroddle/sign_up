@@ -1,22 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sign Up Page</title>
     <link rel="stylesheet" href="styles.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Bebas+Neue&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+    </style>
 </head>
+
 <body>
-    <div class="hero">
-        <div class="logo-banner"></div>
-        <p class="img-credit"></p>
-    </div>
-    <div class="form-div">
-        <p class="description"></p>
-            <form action="">
+    <div class="container">
+        <div class="hero-img">
+            <div class="logo-banner">
+                <img class="logo" id="logo" src="images/odin-lined.png" alt="odin_logo">
+                <h1>ODIN</h1>
+            </div>
+            <p class="img-credit">Photo by&nbsp;<a
+                    href="https://unsplash.com/@jyunker?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">John
+                    Yunker</a>&nbsp;on&nbsp;<a
+                    href="https://unsplash.com/@christenbroddle/likes?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+            </p>
+        </div>
+        <div class="form-div">
+            <p class="description">This is not a real online service! You know you need something like this in your life
+                to help you realize your deepest dreams.<br>Sign up <em>now</em> to get started.
+                <br><br>You <em>know</em> you want to.
+            </p>
+            <form action="sign_up/results.html" method="GET">
+                <legend>Let's do this!</legend>
+                <label for="firstName">*First Name</label>
+                <input type="text" id="firstName" name="first_name">
+                <label for="lastName">*Last Name</label>
+                <input type="text" id="lastName" name="last_name">
+                <label for="user_email">*Email</label>
+                <input type="email" id="user_email" name="email">
+                <label for="user_phone_number">Phone Number</label>
+                <input type="text" id="phone_number" name="phone_number" minlength="9" maxlength="9">
+                <label for="user_password">*Password (10 characters required)</label>
+                <input type="password" class="error" id="user_password" name="password" minlength="10" required>
+                <label for="user_confirm_password">*Confirm Password</label>
+                <input type="password" class="error"id="user_confirm_password" name="confirm_password" minlength="10" required>
+                <button id="submit" type="submit">Create Account</button>
             </form>
-            <button></button>
+
+        </div>
     </div>
 </body>
+
 </html>
